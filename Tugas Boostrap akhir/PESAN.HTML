@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simban Studio</title>
+    <link rel="shortcut icon" href="Logo simban.png" type="image/x-icon">
+    <link rel="stylesheet" href="PEMBAYARAN.CSS">
+</head>
+<body>
+    <div class="container">
+        <h1>Checkout</h1>
+        <div class="progress-bar">
+            <div class="step active">Keranjang</div>
+            <div class="step">Alamat</div>
+            <div class="step">Pembayaran</div>
+            <div class="step">Konfirmasi</div>
+        </div>
+
+        <form class="checkout-form">
+            <h2>Alamat Pengiriman</h2>
+            <label for="name">Nama Penerima:</label>
+            <input type="text" id="name" required>
+
+            <label for="address">Alamat:</label>
+            <input type="text" id="address" required>
+
+            <label for="city">Kota:</label>
+            <input type="text" id="city" required>
+
+            <label for="postal">Kode Pos:</label>
+            <input type="text" id="postal" required>
+
+            <h2>Metode Pembayaran</h2>
+            <select id="payment" required>
+                <option value="">Pilih Metode Pembayaran</option>
+                <option value="bank_transfer">Transfer Bank</option>
+                <option value="credit_card">Kartu Kredit</option>
+                <option value="e_wallet">Dompet Digital</option>
+            </select>
+
+            <button type="submit" class="btn">Bayar Sekarang</button>
+        </form>
+    </div>
+</body>
+</html>
